@@ -16,7 +16,7 @@ app.use(express.json()); //middelware is a function that runs b4 you send a resp
 
 app.use("/api/products",productRoutes)
 
-app.listen(4000,() =>{
+app.listen(PORT,() =>{
     connectDB();
     console.log("server started at http://localhost:"+PORT);
 })
